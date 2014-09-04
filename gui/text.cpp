@@ -1,5 +1,3 @@
-#include <SFML/Graphics.hpp>
-#include <string>
 #include "text.h"
 
 InputBox::InputBox(sf::RenderWindow* window, sf::Font font, int x, int y, int charWidth, int charHeight):

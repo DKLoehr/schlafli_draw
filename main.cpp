@@ -1,9 +1,7 @@
-#include <SFML/Graphics.hpp>
 #include ".\gui\text.h"
 #include ".\gui\button.h"
 #include ".\gui\diagram.h"
 #include ".\gui\checkbox.h"
-#include <iostream>
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(640, 480), "Schlafli");
@@ -33,7 +31,7 @@ int main() {
     Diagram poly = Diagram(&window, window.getSize().x / 2,
                            (window.getSize().y - but.GetHeight()) / 2 + but.GetHeight());
 
-    double rotationAngle = 2000;
+    double rotationAngle = 8000;
 
     while (window.isOpen())
     {

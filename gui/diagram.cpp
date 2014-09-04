@@ -1,9 +1,5 @@
-#include <SFML/Graphics.hpp>
-#include <string>
-#include <algorithm>
-#include <iostream>
-#include <math.h>
 #include "diagram.h"
+#include <math.h>
 
 #define PI (atan(1) * 4)
 #define TAU (2 * PI)
