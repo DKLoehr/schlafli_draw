@@ -1,7 +1,8 @@
 #include "diagram.h"
 #include <math.h>
+#include <iostream>
 
-#define PI (atan(1) * 4)
+#define PI 3.14159265358979323846
 #define TAU (2 * PI)
 
 Diagram::Diagram() {
@@ -9,6 +10,10 @@ Diagram::Diagram() {
     m_q = 1;
     m_r = -1;
     m_s = -1;
+
+    m_tess = false;
+    m_displayEdges = true;
+    m_allWhite = false;
 
     m_scale = 220;
     m_center = sf::Vector3f(300, 250, 0);
@@ -21,6 +26,10 @@ Diagram::Diagram(sf::RenderWindow* window, int centerX, int centerY, std::string
     m_w = window;
     SetPQR(str);
     m_scale = 200;
+
+    m_tess = false;
+    m_displayEdges = true;
+    m_allWhite = false;
 };
 
 bool Diagram::IsGood(sf::Vertex vert1, sf::Vertex vert2) {
@@ -409,6 +418,7 @@ void Diagram::ToggleColors() {
 sf::Color Diagram::Colorgen(int seed) {
     if(m_allWhite && (m_r <= 1 || m_tess || m_displayEdges))
         return sf::Color::White;
+    srand(109732421*seed);
     int hue = (int)((seed * 42 * 23657) * 15274) % 360;
     return HSVtoRGB(hue, 1, 1);
 }

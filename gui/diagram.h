@@ -12,9 +12,9 @@ private:
     int m_r;
     int m_s;
 
-    bool m_tess = false;   // True if we have a 2D tesselation, false otherwise (2D polygon or 3D polytope)
-    bool m_displayEdges = true; // Whether or not we want to display the edges or faces of the polyhedron
-    bool m_allWhite = false; // Whether or not we want to display colors on lines (does not affect faces)
+    bool m_tess;   // True if we have a 2D tesselation, false otherwise (2D polygon or 3D polytope)
+    bool m_displayEdges; // Whether or not we want to display the edges or faces of the polyhedron
+    bool m_allWhite; // Whether or not we want to display colors on lines (does not affect faces)
 
     double m_rotateSpeed;  // The speed with which we rotate
 

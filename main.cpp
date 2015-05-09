@@ -2,6 +2,7 @@
 #include ".\gui\button.h"
 #include ".\gui\diagram.h"
 #include ".\gui\checkbox.h"
+#include ".\geometry\S_Symbol.h"
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(640, 480), "Schlafli");
