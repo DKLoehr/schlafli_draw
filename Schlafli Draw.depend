@@ -732,12 +732,15 @@
 1409796580 source:c:\users\devon\desktop\workspace\schlafli\gui\text.cpp
 	"text.h"
 
-1431195276 source:c:\users\devon\desktop\workspace\schlafli\main.cpp
+1431220358 source:c:\users\devon\desktop\workspace\schlafli\main.cpp
 	".\gui\text.h"
 	".\gui\button.h"
 	".\gui\diagram.h"
 	".\gui\checkbox.h"
 	".\geometry\S_Symbol.h"
+	".\geometry\Polytope.h"
+	".\geometry\Polytope_helper.h"
+	<iostream>
 
 1397250415 c:\sfml-2.1\include\sfml\opengl.hpp
 	<SFML/Config.hpp>
@@ -2101,10 +2104,11 @@
 1431207507 c:\users\devon\desktop\workspace\schlafli\geometry\polytope_helper.h
 	<Eigen/Dense>
 
-1431208747 source:c:\users\devon\desktop\workspace\schlafli\geometry\polytope_helper.cpp
+1431222636 source:c:\users\devon\desktop\workspace\schlafli\geometry\polytope_helper.cpp
 	"Polytope_helper.h"
 	<Eigen/QR>
 	<math.h>
+	<iostream>
 
 1431206536 c:\eigen 3.2.4\eigen\dense
 	"Core"

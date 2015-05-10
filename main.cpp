@@ -3,8 +3,21 @@
 #include ".\gui\diagram.h"
 #include ".\gui\checkbox.h"
 #include ".\geometry\S_Symbol.h"
+#include ".\geometry\Polytope.h"
+#include ".\geometry\Polytope_helper.h" //Debugging
+#include <iostream> // Debugging
 
 int main() {
+    VectorXd test(4);
+    test << -1, 1, 1, 1;
+    std::cout << test << std::endl;
+    MatrixXd axis(2,4);
+    axis << -1, -1, 1, 1,
+            1, 1, 1, 1;
+    std::cout << axis << std::endl;
+    VectorXd result = RotateAroundRowSpace(axis, test, 2*3.1415926/3);
+    std::cout << result << std::endl;
+
     sf::RenderWindow window(sf::VideoMode(640, 480), "Schlafli");
 
     sf::Font inFont;
